@@ -1,0 +1,30 @@
+math { font-family: 'Cambria Math' }
+math[display="block"] { display: block }
+math[display="inline"] { display: inline-block }
+
+mi { font-style: italic }
+mn { font-style: normal }
+mo { font-style: normal }
+
+mfenced { display:inline-block; border-left: .095em solid; border-right: .095em solid }
+mfenced > mfenced { margin: 0 .0792em }
+
+mfrac:empty {}
+mfrac { font-size: 50%; text-align: center; display: inline-block; }
+mfrac > *:first-child { display: block; border-bottom: .18em solid }
+mfrac > *:first-child + * { display: block; }
+
+mrow { white-space: nowrap; }
+
+msub:empty {}
+msub > *:first-child + *,
+msub > *:last-child:not(:first-child) { font-size: 50%; vertical-align: sub; }
+
+msubsup {display: inline-block;}
+msubsup:empty {}
+msubsup > *:first-child { position: static }
+msubsup > *:first-child + * { font-size:50%; vertical-align: sub}
+msubsup > *:first-child + * + * { font-size:50%; vertical-align: super; margin-left: -33.3333%;  }
+
+msup > *:first-child + *,
+msup > *:last-child:not(:first-child) { font-size: 50%; vertical-align: super; }
