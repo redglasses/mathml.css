@@ -6,8 +6,8 @@ mi { font-style: italic }
 mn { font-style: normal }
 mo { font-style: normal }
 
-mfenced { display:inline-block; border-left: .095em solid; border-right: .095em solid }
-mfenced > mfenced { margin: 0 .0792em }
+mfenced::before { content: "(" }
+mfenced::after { content: ")" }
 
 mfrac:empty {}
 mfrac { font-size: 50%; text-align: center; display: inline-block; }
@@ -23,8 +23,8 @@ msub > *:last-child:not(:first-child) { font-size: 50%; vertical-align: sub; }
 msubsup {display: inline-block;}
 msubsup:empty {}
 msubsup > *:first-child { position: static }
-msubsup > *:first-child + * { font-size:50%; vertical-align: sub}
-msubsup > *:first-child + * + * { font-size:50%; vertical-align: super; margin-left: -33.3333%;  }
+msubsup > *:first-child + * { font-size: 50%; vertical-align: sub}
+msubsup > *:first-child + * + * { font-size: 50%; vertical-align: super; margin-left: -33.3333%;  }
 
 msup > *:first-child + *,
 msup > *:last-child:not(:first-child) { font-size: 50%; vertical-align: super; }
